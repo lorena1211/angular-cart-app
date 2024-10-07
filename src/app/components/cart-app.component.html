@@ -1,10 +1,9 @@
 
-<navbar [items] = "items" />
+<navbar 
+[items] = "items" 
+[total]="total" />
 <div class="container my-4">
-    <h2>Catalogo de productos App!</h2>
     
-    <catalog [products]="products" (productEventEmitter)="onAddCart($event)" />
-
-    
+    <router-outlet></router-outlet>    
     
 </div>
